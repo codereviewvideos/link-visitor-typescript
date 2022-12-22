@@ -1,4 +1,4 @@
-See [https://codereviewvideos.com/url-checker/typescript/]
+See [https://codereviewvideos.com/url-checker/typescript/]()
 
 # To run
 
