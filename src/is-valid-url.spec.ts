@@ -2,6 +2,7 @@ import { isValidUrl } from "./is-valid-url";
 
 describe("isValidUrl", () => {
   [
+    [true, false],
     [null, false],
     ["", false],
     ["null", false],
@@ -15,7 +16,7 @@ describe("isValidUrl", () => {
     ],
   ].forEach(([given, expected]) => {
     test(`given: ${given}, expected: ${expected}`, () => {
-      expect(isValidUrl(given as unknown as string | null)).toEqual(expected);
+      expect(isValidUrl(given as string | null)).toEqual(expected);
     });
   });
 });
